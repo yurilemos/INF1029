@@ -40,30 +40,3 @@ int matrix_matrix_mult(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC){
 
     return 1;
 }
-
-void fill_matrix(Matrix *matrix){
-	unsigned long int m = matrix->height, n = matrix->width;
-	int i=0,j=0;
-	
-	for(i=0;i<m; i++){
-		for(j=0; j<n; j++){
-			matrix->rows[i*n + j] = 0.0;
-		}
-	}
-}
-
-void mostra_matrix(Matrix *matrix){
-
-	unsigned long int m = matrix->height, n = matrix->width;
-	int i=0,j=0;
-
-	printf("[ ");
-	for(i=0;i<m; i++){
-		for(j=0; j<n; j++){
-			printf(" %f ",matrix->rows[i*n + j]);
-		}
-		printf("\n");
-	}
-	printf("]\n");
-
-}

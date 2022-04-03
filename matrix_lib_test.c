@@ -24,6 +24,7 @@ int store_matrix(struct matrix *matrix, char *filename) {
 
   /* Try to open file of floats */
   if ((fd = fopen(filename, "wb")) == NULL) {
+    printf("teste1\n");
     printf("Unable to open file %s\n", filename);
     return 0;
   }
@@ -55,6 +56,7 @@ int load_matrix(struct matrix *matrix, char *filename) {
 
   /* Try to open file of floats */
   if ((fd = fopen(filename, "rb")) == NULL) {
+    printf("teste2\n");
     printf("Unable to open file %s\n", filename);
     return 0;
   }
