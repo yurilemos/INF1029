@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <immintrin.h>
-
 typedef struct matrix {
 	unsigned long int height;
 	unsigned long int width;
