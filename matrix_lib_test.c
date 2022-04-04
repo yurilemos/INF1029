@@ -51,12 +51,13 @@ int load_matrix(struct matrix *matrix, char *filename) {
   /* Check the numbers of the elements of the matrix */
   n = matrix->height * matrix->width;
 
+  printf("number of elems: %ld\n", n);
+
   /* Check the integrity of the matrix */
   if (n == 0 || matrix->rows == NULL) return 0;
 
   /* Try to open file of floats */
   if ((fd = fopen(filename, "rb")) == NULL) {
-    printf("teste2\n");
     printf("Unable to open file %s\n", filename);
     return 0;
   }
