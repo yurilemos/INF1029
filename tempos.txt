@@ -1,0 +1,18 @@
+Antonio mesquita (2210269) e Yuri Lemos (1610893)
+
+Resultados ao executar o programa com o commando:
+
+matrix_lib_test 5.0 8 16 16 8 4 floats_256_2.0f.dat floats_256_5.0f.dat result1.dat result2.dat
+
+
+Onde,
+5.0 é o valor escalar que multiplicará a primeira matriz;
+8 é o número de linhas da primeira matriz;
+16 é o número de colunas da primeira matriz;
+16 é o número de linhas da segunda matriz;
+8 é o número de colunas da segunda matriz;
+4 é o número de threads a serem disparadas;
+
+Tempo multiplicação escalar (5.0, matrixA): 0.230000 ms
+Tempo multiplicação matricial (matrixA, mattrixB): 0.112000 ms
+Tempo total: 3.289000 ms
